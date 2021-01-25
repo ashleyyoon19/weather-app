@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+
+        <div class="weather">
+
+            <div id="time">
+                <img id="calendar" src="https://static.thenounproject.com/png/862522-200.png">
+                <h2 id="localDate"></h2>
+                <h2 id="localTime"></h2>
+            </div>
+
+            <a href="#"></a><h2 id="weaTitle">Your local weather today in:</h2>
+            <!-- <h2 id="localWeather"></h2> -->
+            <h2 id="localLoc"></h2>
+            <div id="temp">
+                <img id="weatherImg">
+                <p id="weatherTemp"></p>
+                <div id="tempConversion">
+                    <button id="celsius" onclick="tempConversion(this)">°C</button>
+                    <p id="border">|</p>
+                    <button id="fahrenheit" onclick="tempConversion(this)">°F</button>
+                </div>
+            </div>
+            <div id="weatherInfo">
+                <div id="today">
+                    <p id="descText">Today is...</p>
+                    <p id="desc"></p>
+                </div>
+
+                <div id="todayWind">
+                    <p id="windText">Wind:</p>
+                    <p id="wind"></p>
+                </div>
+
+                <div id="todayHumidity">
+                    <p id="humidityText">Humidity:</p>
+                    <p id="humidity"></p>
+                </div>
+            </div>
+
+            <form>
+                <input id="search" type="text" placeholder="Search City">
+            </form>
+
+        </div>
+
+        <!-- <div class="location">
+            <h2 id="localLoc"></h2>
+        </div> -->
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

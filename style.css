@@ -1,0 +1,219 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    color: #fff;
+}
+
+#time{
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#calendar{
+    display: inline;
+    width: 70px;
+    height: 70px;
+}
+
+#localDate, #localTime{
+    display: inline;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    vertical-align: 22px;
+    padding-left: 10px;
+}
+
+#localTime{
+    color: #fff;
+}
+
+.weather{
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-top: 290px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    /* background-color: red; */
+}
+
+#weaTitle{
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+}
+
+#weaTitle:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 5px;
+}
+
+#localLoc{
+    display: inline;
+    padding-left: 8px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#temp{
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    /* background-color: blue; */
+}
+
+#weatherImg{
+    display: inline;
+}
+
+#weatherTemp{
+    display: inline;
+    vertical-align: 50px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    padding-left: 5px;
+}
+
+#tempConversion{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: 100px;
+    left: 50px;
+}
+
+#celsius{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    color: #fff;
+}
+
+#border{
+    display: inline-block;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+}
+
+#fahrenheit{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#weatherInfo{
+    width: 230px;
+    height: auto;
+    margin: auto;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#today, #todayWind, #todayHumidity{
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    /* background-color: red; */
+    padding: 10px;
+}
+
+#descText, #windText, #humidityText{
+    display: inline;
+    /* text-align: left; */
+    font-size: 18px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#desc, #wind, #humidity{
+    display: inline;
+    font-size: 18px;
+    font-family: 'Fredoka One', cursive;
+}
+
+input[type="text"]{
+    width: 130px;
+    height: 30px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255,255,255,0.4);
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* #localWeather{
+    right: 80%;
+    text-align: center;
+} */
+
+/* .location{
+    position: absolute;
+    width: 200px;
+    margin-top: 7%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+#locTitle{
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+} */
+
+
+/*figure out screen-width stuff*/
+@media screen and (max-width: 800px){
+    #time{
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 693px){
+    .weather{
+        padding-bottom: 25px;
+    }
+
+    #time{
+        padding-bottom: 0px;
+    }
+
+    #calendar{
+        width: 50px;
+        height: 50px;
+    }
+    
+    #localDate, #localTime{
+        font-size: 15px;
+    }
+
+    #weaTitle{
+        font-size: 15px;
+    }
+
+    input[type="text"]{
+        margin-top: 20px;
+    }
+}
