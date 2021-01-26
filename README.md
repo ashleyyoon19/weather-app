@@ -8,3 +8,5 @@ Features of the app:
 3. Changes the weather icon based on the city's weather description;
 4. Changes the background image based on the visitor's local time;
 5. Provides a search bar for users to search other cities' weather.
+
+[Live Demo](https://ashleyyoon19.github.io/weather-app/)
