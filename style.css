@@ -1,6 +1,7 @@
 body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .container{
@@ -49,7 +50,6 @@ h1{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    /* background-color: red; */
 }
 
 #weaTitle{
@@ -69,12 +69,11 @@ h1{
     font-family: 'Fredoka One', cursive;
 }
 
-#temp{
+#temp, #buttonGroup{
     margin: auto;
     padding: 0;
     width: auto;
     height: auto;
-    /* background-color: blue; */
 }
 
 #weatherImg{
@@ -98,26 +97,21 @@ h1{
 }
 
 #celsius{
+    color: #fff;
+}
+
+#celsius, #fahrenheit{
     outline: none;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Fredoka One', cursive;
-    color: #fff;
 }
 
 #border{
     display: inline-block;
     font-family: 'Fredoka One', cursive;
-    font-size: 20px;
-}
-
-#fahrenheit{
-    outline: none;
-    background: none;
-    border: none;
-    font-size: 20px;
-    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
 }
 
 #weatherInfo{
@@ -133,13 +127,11 @@ h1{
     padding: 0;
     width: auto;
     height: auto;
-    /* background-color: red; */
     padding: 10px;
 }
 
 #descText, #windText, #humidityText{
     display: inline;
-    /* text-align: left; */
     font-size: 18px;
     font-family: 'Fredoka One', cursive;
 }
@@ -150,7 +142,8 @@ h1{
     font-family: 'Fredoka One', cursive;
 }
 
-input[type="text"]{
+#search{
+    display: inline;
     width: 130px;
     height: 30px;
     border: none;
@@ -161,33 +154,48 @@ input[type="text"]{
     padding-right: 10px;
 }
 
-input:focus{
+#search:focus, #searchButton:focus{
     outline: none;
 }
 
-/* #localWeather{
-    right: 80%;
-    text-align: center;
-} */
-
-/* .location{
-    position: absolute;
-    width: 200px;
-    margin-top: 7%;
-    left: 70%;
-    transform: translate(-50%,-50%);
+#searchButton{
+    display: inline;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255,255,255,0.4);
+    font-family: 'Fredoka One', cursive;
 }
 
-#locTitle{
-    position: absolute;
+#searchButton:active{
+    background-color: #fff;
+}
+
+#priv{
+    position: fixed;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    margin-left: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#privacyInfo{
+    text-align: center;
     font-family: 'Fredoka One', cursive;
-} */
+    font-size: 13px;
+}
 
-
-/*figure out screen-width stuff*/
+/*changes layout based on screen-width*/
 @media screen and (max-width: 800px){
     #time{
         padding-bottom: 20px;
+    }
+
+    #privButton{
+        left: 0px;
     }
 }
 
@@ -213,7 +221,11 @@ input:focus{
         font-size: 15px;
     }
 
-    input[type="text"]{
+    #search{
         margin-top: 20px;
+    }
+
+    #privacyInfo{
+        font-size: 10px;
     }
 }

@@ -13,7 +13,6 @@
         <h1>Weather App</h1>
 
         <div class="weather">
-
             <div id="time">
                 <img id="calendar" src="https://static.thenounproject.com/png/862522-200.png">
                 <h2 id="localDate"></h2>
@@ -21,7 +20,6 @@
             </div>
 
             <a href="#"></a><h2 id="weaTitle">Your local weather today in:</h2>
-            <!-- <h2 id="localWeather"></h2> -->
             <h2 id="localLoc"></h2>
             <div id="temp">
                 <img id="weatherImg">
@@ -32,6 +30,7 @@
                     <button id="fahrenheit" onclick="tempConversion(this)">°F</button>
                 </div>
             </div>
+            
             <div id="weatherInfo">
                 <div id="today">
                     <p id="descText">Today is...</p>
@@ -49,15 +48,14 @@
                 </div>
             </div>
 
-            <form>
+            <div id="buttonGroup">
                 <input id="search" type="text" placeholder="Search City">
-            </form>
-
+                <button id="searchButton" onclick="searchLocation(this)">ENTER</button>
+            </div>
         </div>
-
-        <!-- <div class="location">
-            <h2 id="localLoc"></h2>
-        </div> -->
+        <div id="priv">
+            <p id="privacyInfo">This website collects and processes your IP address and location.</p>
+        </div>
 
         <script src="script.js"></script>
     </div>
