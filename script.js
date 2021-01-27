@@ -118,8 +118,11 @@ function getDate(){
 
 /*gets location of visitor via IP address*/
 async function getLocation(){
-    const response=await fetch('https://api.ipdata.co/?api-key=test', {mode: 'cors'});
+    const apiKey='c27bf991417a54acc12dee95b7eb4a8912478af2aad2a7a779de9dd1';
+    const response=await fetch('https://api.ipdata.co/?api-key='+apiKey, {mode: 'cors'});
+        console.log(response);
     response.json().then(function(response){
+        console.log(response);
         loc=response.city;
         getWeather(loc);
     })
