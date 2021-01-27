@@ -120,6 +120,7 @@ function getDate(){
 async function getLocation(){
     const apiKey='c27bf991417a54acc12dee95b7eb4a8912478af2aad2a7a779de9dd1';
     const response=await fetch('https://api.ipdata.co/?api-key='+apiKey, {mode: 'cors'});
+    
     response.json().then(function(response){
         loc=response.city;
         getWeather(loc);
