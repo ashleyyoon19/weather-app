@@ -1,7 +1,11 @@
 body{
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     overflow: scroll;
+=======
+    overflow: auto;
+>>>>>>> 1b6b72147836cd44be5da80ce8eac95b555f1826
 }
 
 .container{
